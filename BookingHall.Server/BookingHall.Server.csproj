@@ -8,7 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.10" />
-    <PackageReference Include="Microsoft.OpenApi" Version="2.0.1" />
+    <PackageReference Include="Microsoft.OpenApi" Version="2.7.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookingHall.Application\BookingHall.Application.csproj" />
+    <ProjectReference Include="..\BookingHall.Infrastructure\BookingHall.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

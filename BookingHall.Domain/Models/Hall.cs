@@ -7,6 +7,6 @@ public class Hall
     public int Capacity { get; set; }
     public decimal PricePerHour { get; set; }
 
-    public ICollection<Service> Services { get; set; } = [];
+    public ICollection<HallItem> HallItems { get; set; } = [];
     public ICollection<Booking> Bookings { get; set; } = [];
 }

@@ -6,11 +6,14 @@ public class Booking
     public DateTime BookingStart { get; set; }
     public TimeSpan Duration { get; set; }
 
+    // для расчета цены со скидкой или наценкой
+    public decimal PricePerHour { get; set; }
+
     public int HallId { get; set; }
     public Hall Hall { get; set; } = null!;
 
     public ICollection<BookingItem> BookingItems { get; set; } = [];
 
     public decimal TotalSum =>
-        Hall.PricePerHour * (decimal)Duration.TotalHours + BookingItems.Sum(x => x.Price);
+        PricePerHour * (decimal)Duration.TotalHours + BookingItems.Sum(x => x.Price);
 }

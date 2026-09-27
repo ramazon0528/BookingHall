@@ -1,11 +1,30 @@
 {
   "version": 4,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "BookingHall.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/BookingHall.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BookingHall.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BookingHall.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BookingHall.Domain/BookingHall.Domain.csproj",
+      "msbuildProject": "../BookingHall.Domain/BookingHall.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "BookingHall.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\mrkol\\.nuget\\packages\\": {},
@@ -40,7 +59,11 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mrkol\\Desktop\\BookingHall\\BookingHall.Domain\\BookingHall.Domain.csproj": {
+              "projectPath": "C:\\Users\\mrkol\\Desktop\\BookingHall\\BookingHall.Domain\\BookingHall.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

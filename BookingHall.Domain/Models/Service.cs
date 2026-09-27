@@ -6,6 +6,6 @@ public class Service
     public string Name { get; set; } = string.Empty;
     public decimal Price { get; set; }
 
-    public int? HallId { get; set; }
-    public Hall? Hall { get; set; } = null!;
+    public ICollection<HallItem> HallItems { get; set; } = [];
+    public ICollection<BookingItem> BookingItems { get; set; } = [];
 }

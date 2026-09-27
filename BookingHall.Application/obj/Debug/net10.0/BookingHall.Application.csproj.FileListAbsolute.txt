@@ -1,0 +1,16 @@
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\bin\Debug\net10.0\BookingHall.Application.deps.json
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\bin\Debug\net10.0\BookingHall.Application.dll
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\bin\Debug\net10.0\BookingHall.Application.pdb
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\bin\Debug\net10.0\BookingHall.Domain.dll
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\bin\Debug\net10.0\BookingHall.Domain.pdb
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\obj\Debug\net10.0\BookingHall.Application.csproj.AssemblyReference.cache
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\obj\Debug\net10.0\BookingHall.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\obj\Debug\net10.0\BookingHall.Application.AssemblyInfoInputs.cache
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\obj\Debug\net10.0\BookingHall.Application.AssemblyInfo.cs
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\obj\Debug\net10.0\BookingHall.Application.csproj.CoreCompileInputs.cache
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\obj\Debug\net10.0\BookingHall.Application.sourcelink.json
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\obj\Debug\net10.0\BookingH.295FF72F.Up2Date
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\obj\Debug\net10.0\BookingHall.Application.dll
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\obj\Debug\net10.0\refint\BookingHall.Application.dll
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\obj\Debug\net10.0\BookingHall.Application.pdb
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Application\obj\Debug\net10.0\ref\BookingHall.Application.dll

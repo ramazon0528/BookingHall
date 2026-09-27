@@ -1,0 +1,12 @@
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Domain\bin\Debug\net10.0\BookingHall.Domain.deps.json
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Domain\bin\Debug\net10.0\BookingHall.Domain.dll
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Domain\bin\Debug\net10.0\BookingHall.Domain.pdb
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Domain\obj\Debug\net10.0\BookingHall.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Domain\obj\Debug\net10.0\BookingHall.Domain.AssemblyInfoInputs.cache
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Domain\obj\Debug\net10.0\BookingHall.Domain.AssemblyInfo.cs
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Domain\obj\Debug\net10.0\BookingHall.Domain.csproj.CoreCompileInputs.cache
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Domain\obj\Debug\net10.0\BookingHall.Domain.sourcelink.json
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Domain\obj\Debug\net10.0\BookingHall.Domain.dll
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Domain\obj\Debug\net10.0\refint\BookingHall.Domain.dll
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Domain\obj\Debug\net10.0\BookingHall.Domain.pdb
+C:\Users\mrkol\Desktop\BookingHall\BookingHall.Domain\obj\Debug\net10.0\ref\BookingHall.Domain.dll
