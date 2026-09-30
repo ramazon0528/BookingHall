@@ -1,3 +1,6 @@
+using BookingHall.Application.DTO;
+using BookingHall.Application.Services;
+using BookingHall.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookingHall.Server.Controllers;
@@ -6,8 +9,31 @@ namespace BookingHall.Server.Controllers;
 [Route("api/[controller]")]
 public class HallController : ControllerBase
 {
-    public string Get()
+    private readonly HallService _hallService;
+
+    public HallController(HallService hallService)
     {
-        return "heelo";
+        _hallService = hallService;
+    }
+
+    [HttpGet]
+    public async Task<ActionResult<FilterResult<GetHallDto>>> GetHallsAsync(
+        [FromQuery] HallFilter filter
+    )
+    {
+        if (filter == null)
+            filter = new();
+
+        var items = await _hallService.GetHallsAsync(filter);
+
+        return Ok(items.Items);
+    }
+
+    [HttpPost]
+    public async Task<ActionResult> AddAsync([FromBody] CreateHallDto hall)
+    {
+        await _hallService.AddAsync(hall);
+
+        return Ok(hall);
     }
 }
