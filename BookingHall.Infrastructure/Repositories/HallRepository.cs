@@ -63,9 +63,7 @@ public class HallRepository : IHallRepository
             var bookingEnd = bookingStart + filter.Duration.Value;
 
             query = query.Where(x =>
-                !x.Bookings.Any(b =>
-                    b.BookingStart < bookingEnd && b.BookingStart + b.Duration > bookingStart
-                )
+                !x.Bookings.Any(b => b.BookingStart < bookingEnd && b.BookingEnd > bookingStart)
             );
         }
 

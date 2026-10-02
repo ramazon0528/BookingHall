@@ -9,6 +9,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
     public DbSet<Hall> Halls { get; set; }
     public DbSet<Booking> Bookings { get; set; }
     public DbSet<BookingItem> BookingItems { get; set; }
+    public DbSet<HallItem> HallItems { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -16,16 +17,25 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
 
         modelBuilder.Entity<Booking>(b =>
         {
-            // связь один к многим: 1 зал, много бронирований
             b.HasOne(x => x.Hall)
                 .WithMany(x => x.Bookings)
                 .HasForeignKey(x => x.HallId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
         });
 
-        modelBuilder.Entity<Service>(s =>
+        modelBuilder.Entity<HallItem>(h =>
         {
-            // связь один к многим: 1 зал, много сервисов
+            h.HasKey(x => new { x.HallId, x.ServiceId });
+
+            h.HasOne(x => x.Hall)
+                .WithMany(x => x.HallItems)
+                .HasForeignKey(x => x.HallId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            h.HasOne(x => x.Service)
+                .WithMany(x => x.HallItems)
+                .HasForeignKey(x => x.ServiceId)
+                .OnDelete(DeleteBehavior.Restrict);
         });
 
         modelBuilder.Entity<BookingItem>(b =>

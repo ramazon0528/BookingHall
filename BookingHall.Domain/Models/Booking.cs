@@ -5,6 +5,7 @@ public class Booking
     public int Id { get; set; }
     public DateTime BookingStart { get; set; }
     public TimeSpan Duration { get; set; }
+    public DateTime BookingEnd { get; set; }
 
     // для расчета цены со скидкой или наценкой
     public decimal PricePerHour { get; set; }
