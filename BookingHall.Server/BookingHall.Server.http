@@ -1,18 +1,18 @@
 @BookingHall.Server_HostAddress = http://localhost:5111
 
-POST http://localhost:5111/api/hall
+POST    http://localhost:5111/api/booking
 Content-Type: application/json
 
 {
-    "Name" : "Зал E",
-    "PricePerHour" : "1000",
-    "Capacity" : "20",
-    "HallItems" : [
+    "HallId": 2,
+    "BookingStart": "2026-10-02T12:00:00",
+    "Duration": "02:00:00",
+    "BookingItems": [
         {
-            "ServiceId" : "1"
+            "ServiceId" : 1
         },
         {
-            "ServiceId" : "2"
+            "ServiceId" : 2
         }
     ]
 }

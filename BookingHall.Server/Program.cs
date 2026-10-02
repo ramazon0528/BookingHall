@@ -11,6 +11,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddScoped<HallService>();
 builder.Services.AddScoped<ServiceService>();
+builder.Services.AddScoped<BookingService>();
 
 var app = builder.Build();
 
